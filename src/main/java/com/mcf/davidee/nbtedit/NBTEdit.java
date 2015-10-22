@@ -93,7 +93,7 @@ public class NBTEdit {
 		logger.setLevel(Level.ALL);
 
 		try {
-			File logfile = new File(proxy.getMinecraftDirectory(),"NBTEdit.log");
+			File logfile = new File(proxy.getMinecraftDirectory(),"logs/NBTEdit.log");
 			if ((logfile.exists() || logfile.createNewFile()) && logfile.canWrite() && logHandler == null)
 			{
 				logHandler = new FileHandler(logfile.getPath());
